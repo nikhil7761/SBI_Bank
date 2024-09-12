@@ -23,7 +23,7 @@ function UsersList() {
 
   return (
     <div>
-      <Navbar /> {/* Ensure Navbar is always at the top */}
+       {/* Ensure Navbar is always at the top */}
       <div className="container">
         <h2>All Users</h2>
         {!showUsers ? (
