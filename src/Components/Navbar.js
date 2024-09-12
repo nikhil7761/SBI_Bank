@@ -12,10 +12,13 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+              <Link className="nav-link" to="/">Home</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/login">Login</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/signup">Sign Up</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/account">Account</Link>
@@ -23,14 +26,23 @@ function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" to="/transfer">Transfer</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/userslist">All Users</Link> {/* Added All Users link */}
+            </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
+                More
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a className="dropdown-item" href="#">Action</a></li>
-                <li><a className="dropdown-item" href="#">Another action</a></li>
-                <li><a className="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <Link className="dropdown-item" to="#">Action</Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">Another action</Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">Something else here</Link>
+                </li>
               </ul>
             </li>
           </ul>
